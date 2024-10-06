@@ -121,9 +121,9 @@ section {
     width: 80%; /* The section will take 80% of the available width */
     margin: 20px auto; /* Center the sections horizontally and add vertical spacing */
     padding: 20px; /* Add padding inside the section */
-    background-color: transparent; /* Make the background transparent */
+    background-color: transparent; /* Transparent background */
     border-radius: 15px; /* Smooth rounding for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to maintain depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0); /* Completely remove the shadow */
 }
 
 /* General content styling inside sections */
