@@ -42,6 +42,17 @@ header h1 {
     color: #ffffff;
 }
 
+/* Link Colors */
+a {
+    color: #007bff; /* Soft blue */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
 /* Button Container in Header */
 .header-buttons {
     display: flex; /* Align buttons horizontally */
@@ -65,6 +76,7 @@ header h1 {
 .request-btn:hover {
     background: linear-gradient(45deg, #ff574d, #ff7f4d);
 }
+
 
 
 /* Navigation Container */
