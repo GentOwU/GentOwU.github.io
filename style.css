@@ -2,8 +2,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1c1c1e;
-    background-image: radial-gradient(circle at 1px 1px, #555 1px, transparent 1%), radial-gradient(circle at 3px 3px, #555 1px, transparent 1%);
+    background-image: radial-gradient(circle at 1px 1px, #555 1px, transparent 1%), 
+                      radial-gradient(circle at 3px 3px, #555 1px, transparent 1%);
     background-size: 20px 20px;
+    background-attachment: fixed; /* Background stays in place when scrolling */
     margin: 0;
     padding: 0;
     color: #ddd;
