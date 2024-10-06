@@ -15,14 +15,16 @@ body {
 /* Header Styles */
 header {
     background: rgba(30, 30, 30, 0.7); /* Semi-transparent background */
-    padding: 20px;
+    padding: 15px 20px; /* Padding for spacing */
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid #444;
     backdrop-filter: blur(10px); /* Add blur effect */
-    transition: transform 0.4s ease-in-out; /* Smooth animation for hiding/showing */
-    height: 90px; /* Set a fixed height for the header */
+    transition: transform 0.4s ease-in-out; /* Smooth animation */
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Vertically center items */
 }
 
 
@@ -32,18 +34,20 @@ header {
     position: relative; /* Ensure the content is positioned correctly */
 }
 
-
+/* Header Title */
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
+    font-size: 1.8em; /* Adjust font size */
     color: #ffffff;
 }
 
+/* Navigation List */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 15px 0 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Space between menu items */
 }
 
 nav ul li {
@@ -51,6 +55,7 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Navigation Links */
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -105,15 +110,18 @@ table td {
     background-color: rgba(30, 30, 30, 0.7);
 }
 
+/* MKValley Button */
 .mkvalley-btn {
     display: inline-block;
     background: linear-gradient(45deg, #ff6f61, #ff9966);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px; /* Adjust padding to fit the button */
     text-align: center;
     text-decoration: none;
-    border-radius: 20px; /* Adjusted for consistency */
+    border-radius: 20px;
     transition: background 0.3s ease-in-out;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent the button text from wrapping */
 }
 
 .mkvalley-btn:hover {
