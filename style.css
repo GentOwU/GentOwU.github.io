@@ -77,6 +77,30 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* Main Container for Content */
+.container {
+    max-width: 1200px; /* Set the maximum width for the page container */
+    margin: 0 auto;    /* Center the container horizontally */
+    padding: 20px;     /* Add some padding around the content */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 15px; /* Add rounded corners */
+}
+
+/* Adjust text styles inside the container */
+.container h2, .container p {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Adjust any inner sections */
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(40, 40, 40, 0.9); /* Dark background for sections */
+    border-radius: 10px; /* Slight rounding of section corners */
+}
+
+
 section {
     padding: 50px 20px;
     margin-bottom: 50px;
