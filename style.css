@@ -53,31 +53,37 @@ a:hover {
     color: #0056b3; /* Darker blue on hover */
 }
 
-/* Button Container in Header */
+/* Header Buttons Container */
 .header-buttons {
-    display: flex; /* Align buttons horizontally */
+    display: flex;
     gap: 15px; /* Space between buttons */
 }
 
-/* Request Button */
-.request-btn {
+/* Button Base Styles */
+.mkvalley-btn, .request-btn {
     display: inline-block;
-    background: linear-gradient(45deg, #ff6f61, #ff9966);
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Soft gradient background */
     color: white;
-    padding: 10px 15px; /* Adjust padding to fit the button */
     text-align: center;
     text-decoration: none;
-    border-radius: 20px;
-    transition: background 0.3s ease-in-out;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
     font-size: 1rem;
-    white-space: nowrap; /* Prevent the button text from wrapping */
+    white-space: nowrap;
 }
 
-.request-btn:hover {
-    background: linear-gradient(45deg, #ff574d, #ff7f4d);
+/* Hover Effect for Buttons */
+.mkvalley-btn:hover, .request-btn:hover {
+    background-color: #ff574d; /* Slightly darker background on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
 }
 
-
+/* Active Button Effect */
+.mkvalley-btn:active, .request-btn:active {
+    background-color: #e64e3c; /* Even darker for active state */
+    transform: translateY(0); /* Reset lift on click */
+}
 
 /* Navigation Container */
 nav {
@@ -222,24 +228,6 @@ table th {
 
 table td {
     background-color: rgba(30, 30, 30, 0.7);
-}
-
-/* MKValley Button */
-.mkvalley-btn {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff6f61, #ff9966);
-    color: white;
-    padding: 10px 15px; /* Adjust padding to fit the button */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background 0.3s ease-in-out;
-    font-size: 1rem;
-    white-space: nowrap; /* Prevent the button text from wrapping */
-}
-
-.mkvalley-btn:hover {
-    background: linear-gradient(45deg, #ff574d, #ff7f4d);
 }
 
 footer {
