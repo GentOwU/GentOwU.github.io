@@ -22,7 +22,7 @@ header {
     border-bottom: 2px solid #444;
     backdrop-filter: blur(10px); /* Add blur effect */
     transition: transform 0.4s ease-in-out; /* Smooth animation for hiding/showing */
-    height: 70px; /* Set a fixed height for the header */
+    height: 90px; /* Set a fixed height for the header */
 }
 
 
