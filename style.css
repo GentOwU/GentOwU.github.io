@@ -1,25 +1,29 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #2980B9, #6DD5FA);
+    background-color: #1c1c1e;
+    background-image: radial-gradient(circle at 1px 1px, #555 1px, transparent 1%), radial-gradient(circle at 3px 3px, #555 1px, transparent 1%);
+    background-size: 20px 20px;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(30, 30, 30, 0.9);
     padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #444;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
     letter-spacing: 2px;
+    color: #ffffff;
 }
 
 nav ul {
@@ -34,16 +38,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 section {
@@ -55,12 +59,14 @@ h2 {
     font-size: 2em;
     margin-bottom: 20px;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .info-box, .rules-box, .cit-box, .mods-box {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(50, 50, 50, 0.8);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
 }
 
@@ -72,18 +78,22 @@ table {
 
 table th, table td {
     padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    color: #ffffff;
 }
 
 table th {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
+table td {
+    background-color: rgba(30, 30, 30, 0.7);
 }
 
 .mkvalley-btn {
     display: inline-block;
-    background: #4CAF50;
+    background: linear-gradient(45deg, #ff6f61, #ff9966);
     color: white;
     padding: 15px 30px;
     text-align: center;
@@ -94,7 +104,19 @@ table th {
 }
 
 .mkvalley-btn:hover {
-    background: #45a049;
+    background: linear-gradient(45deg, #ff574d, #ff7f4d);
+}
+
+footer {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #444;
+}
+
+footer p {
+    color: #bbb;
+    margin: 0;
 }
 
 /* Smooth Scrolling */
