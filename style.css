@@ -196,9 +196,9 @@ footer p {
 /* Hamburger Menu Styles */
 .hamburger {
     display: none; /* Hidden by default */
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
+    font-size: 30px; /* Size of the icon */
+    cursor: pointer; /* Pointer cursor for click */
+    margin-left: auto; /* Align to the right */
 }
 
 .hamburger .bar {
@@ -208,29 +208,53 @@ footer p {
     border-radius: 3px;
 }
 
+/* Base Styles for Navigation */
 .nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Style for navigation items */
+.nav-menu ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.nav-menu li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for links */
+}
+
+.nav-menu li a:hover {
+    background-color: #444; /* Background color on hover */
 }
 
 .nav-menu.active {
     display: flex;
 }
 
+/* Show the hamburger icon and hide the nav on smaller screens */
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: flex; /* Show the hamburger icon */
     }
 
-    nav ul {
-        display: none;
+    .nav-menu {
+        display: none; /* Hide the navigation by default */
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Space between items */
+        position: absolute; /* Absolute positioning for dropdown */
+        top: 60px; /* Adjust based on header height */
+        right: 0; /* Align to the right */
+        background-color: #333; /* Background color for dropdown */
+        padding: 10px; /* Padding for dropdown */
+        z-index: 10; /* Ensure it appears above other content */
     }
 
-    nav ul.active {
-        display: flex;
+    .nav-menu.active {
+        display: flex; /* Show the navigation when active */
     }
 }
 
