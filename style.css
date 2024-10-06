@@ -79,17 +79,32 @@ nav ul li a:hover {
 
 /* Main Container for Content */
 .container {
-    max-width: 1200px; /* Set the maximum width for the page container */
-    margin: 0 auto;    /* Center the container horizontally */
-    padding: 20px;     /* Add some padding around the content */
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    border-radius: 15px; /* Add rounded corners */
+    max-width: 1200px; /* Maximum width of the container */
+    width: 80%; /* The container will take 80% of the available width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 15px; /* Smooth rounding for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow for depth */
 }
 
-/* Adjust text styles inside the container */
+/* General content styling inside container */
 .container h2, .container p {
     color: #ffffff;
     margin-bottom: 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Slightly wider on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Even wider on very small screens */
+    }
 }
 
 /* Adjust any inner sections */
