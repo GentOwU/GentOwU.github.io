@@ -12,14 +12,21 @@ body {
     text-align: center;
 }
 
+/* Header Styles */
 header {
-    background: rgba(30, 30, 30, 0.9);
+    background: rgba(30, 30, 30, 0.7); /* Semi-transparent background */
     padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid #444;
+    backdrop-filter: blur(10px); /* Add blur effect */
 }
+
+.header-content {
+    position: relative; /* Ensure the content is positioned correctly */
+}
+
 
 header h1 {
     margin: 0;
@@ -97,11 +104,10 @@ table td {
     display: inline-block;
     background: linear-gradient(45deg, #ff6f61, #ff9966);
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    border-radius: 30px;
-    margin-top: 30px;
+    border-radius: 20px; /* Adjusted for consistency */
     transition: background 0.3s ease-in-out;
 }
 
