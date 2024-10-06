@@ -14,17 +14,12 @@ body {
 
 /* Header Styles */
 header {
-    background: rgba(30, 30, 30, 0.7);
-    padding: 15px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid #444;
-    backdrop-filter: blur(10px);
-    transition: transform 0.4s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between header elements */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #222; /* Background color for the header */
+    position: relative; /* Position relative for absolute child elements */
 }
 
 /* Header Title */
@@ -199,6 +194,7 @@ footer p {
     font-size: 30px; /* Size of the icon */
     cursor: pointer; /* Pointer cursor for click */
     margin-left: auto; /* Align to the right */
+    transition: transform 0.3s ease; /* Smooth transition for icon */
 }
 
 .hamburger .bar {
@@ -212,6 +208,8 @@ footer p {
 .nav-menu {
     display: flex; /* Use flexbox for horizontal layout */
     gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center the navigation items */
+    flex-grow: 1; /* Allow nav-menu to take remaining space */
 }
 
 /* Style for navigation items */
@@ -251,10 +249,15 @@ footer p {
         background-color: #333; /* Background color for dropdown */
         padding: 10px; /* Padding for dropdown */
         z-index: 10; /* Ensure it appears above other content */
+        transform: translateY(-20px); /* Start above */
+        opacity: 0; /* Start invisible */
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
     }
 
     .nav-menu.active {
         display: flex; /* Show the navigation when active */
+        transform: translateY(0); /* Slide down */
+        opacity: 1; /* Fade in */
     }
 }
 
