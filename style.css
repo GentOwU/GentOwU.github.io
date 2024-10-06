@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1c1c1e;
-    background-image: radial-gradient(circle at 1px 1px, #555 1px, transparent 1%), 
+    background-image: radial-gradient(circle at 1px 1px, #555 1px, transparent 1%),
                       radial-gradient(circle at 3px 3px, #555 1px, transparent 1%);
     background-size: 20px 20px;
     background-attachment: fixed;
@@ -14,12 +14,12 @@ body {
 
 /* Header Styles */
 header {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between header elements */
-    padding: 10px 20px; /* Add some padding */
-    background-color: #222; /* Background color for the header */
-    position: relative; /* Position relative for absolute child elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #222;
+    position: relative;
 }
 
 /* Header Title */
@@ -29,7 +29,7 @@ header h1 {
     color: #ffffff;
 }
 
-/* Link Colors */
+/* Link Styles */
 a {
     color: #007bff;
     text-decoration: none;
@@ -40,7 +40,7 @@ a:hover {
     color: #0056b3;
 }
 
-/* Ensure buttons look consistent on small screens */
+/* Button Container */
 .header-buttons {
     margin-top: 10px;
     display: flex;
@@ -48,8 +48,9 @@ a:hover {
     gap: 10px;
 }
 
-/* Base Styles for Buttons */
-.mkvalley-btn, .request-btn {
+/* Base Button Styles */
+.mkvalley-btn,
+.request-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff6f61;
@@ -63,26 +64,26 @@ a:hover {
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Hover Effect for Buttons */
-.mkvalley-btn:hover, .request-btn:hover {
+/* Button Hover and Active Effects */
+.mkvalley-btn:hover,
+.request-btn:hover {
     background-color: #ff574d;
     transform: translateY(-3px);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* Active Button Effect */
-.mkvalley-btn:active, .request-btn:active {
+.mkvalley-btn:active,
+.request-btn:active {
     background-color: #e64e3c;
     transform: translateY(0);
     text-shadow: none;
 }
 
-/* Navigation Container */
+/* Navigation Styles */
 nav {
     flex-grow: 1;
 }
 
-/* Navigation List */
 nav ul {
     list-style: none;
     padding: 0;
@@ -92,12 +93,6 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Links */
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -122,29 +117,29 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.container h2, .container p {
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-/* Main Section Styling */
+/* Section Styles */
 section {
-    max-width: 1200px;
-    width: 80%;
     margin: 20px auto;
     padding: 20px;
     background-color: transparent;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
 }
 
-section h2, section p {
+/* Heading and Paragraph Styles */
+.container h2,
+.container p,
+section h2,
+section p {
     color: #ffffff;
     margin-bottom: 15px;
 }
 
 /* Info, Rules, CIT, Mods Boxes */
-.info-box, .rules-box, .cit-box, .mods-box {
+.info-box,
+.rules-box,
+.cit-box,
+.mods-box {
     background: rgba(50, 50, 50, 0.8);
     padding: 20px;
     border-radius: 20px;
@@ -152,13 +147,15 @@ section h2, section p {
     margin-top: 20px;
 }
 
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
@@ -173,7 +170,7 @@ table td {
     background-color: rgba(30, 30, 30, 0.7);
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     background: rgba(30, 30, 30, 0.9);
     padding: 20px;
@@ -190,11 +187,11 @@ footer p {
 
 /* Hamburger Menu Styles */
 .hamburger {
-    display: none; /* Hidden by default */
-    font-size: 30px; /* Size of the icon */
-    cursor: pointer; /* Pointer cursor for click */
-    margin-left: auto; /* Align to the right */
-    transition: transform 0.3s ease; /* Smooth transition for icon */
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: transform 0.3s ease;
 }
 
 .hamburger .bar {
@@ -204,60 +201,59 @@ footer p {
     border-radius: 3px;
 }
 
-/* Base Styles for Navigation */
+/* Navigation Menu */
 .nav-menu {
-    display: flex; /* Use flexbox for horizontal layout */
-    gap: 20px; /* Space between buttons */
-    justify-content: center; /* Center the navigation items */
-    flex-grow: 1; /* Allow nav-menu to take remaining space */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-/* Style for navigation items */
 .nav-menu ul {
-    list-style: none; /* Remove default list styles */
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu li a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px; /* Padding for links */
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .nav-menu li a:hover {
-    background-color: #444; /* Background color on hover */
+    background-color: #444;
 }
 
 .nav-menu.active {
     display: flex;
 }
 
-/* Show the hamburger icon and hide the nav on smaller screens */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .hamburger {
-        display: flex; /* Show the hamburger icon */
+        display: flex;
     }
 
     .nav-menu {
-        display: none; /* Hide the navigation by default */
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Space between items */
-        position: absolute; /* Absolute positioning for dropdown */
-        top: 60px; /* Adjust based on header height */
-        right: 0; /* Align to the right */
-        background-color: #333; /* Background color for dropdown */
-        padding: 10px; /* Padding for dropdown */
-        z-index: 10; /* Ensure it appears above other content */
-        transform: translateY(-20px); /* Start above */
-        opacity: 0; /* Start invisible */
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        z-index: 10;
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .nav-menu.active {
-        display: flex; /* Show the navigation when active */
-        transform: translateY(0); /* Slide down */
-        opacity: 1; /* Fade in */
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -271,7 +267,8 @@ footer p {
         justify-content: center;
     }
 
-    .mkvalley-btn, .request-btn {
+    .mkvalley-btn,
+    .request-btn {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
