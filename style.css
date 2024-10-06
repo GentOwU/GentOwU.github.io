@@ -115,6 +115,36 @@ nav ul li a:hover {
     border-radius: 10px; /* Slight rounding of section corners */
 }
 
+/* Main Section Styling */
+section {
+    max-width: 1200px; /* Set the maximum width for sections */
+    width: 80%; /* The section will take 80% of the available width */
+    margin: 20px auto; /* Center the sections horizontally and add vertical spacing */
+    padding: 20px; /* Add padding inside the section */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 15px; /* Smooth rounding for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow for depth */
+}
+
+/* General content styling inside sections */
+section h2, section p {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    section {
+        width: 90%; /* Wider sections on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 95%; /* Make the sections wider on very small screens */
+    }
+}
+
 
 section {
     padding: 50px 20px;
