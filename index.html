@@ -1,3 +1,6 @@
+Your HTML file looks good overall, but there are several improvements you can make for better semantics, accessibility, and performance. Here’s an improved version of your HTML file with comments highlighting the changes:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +10,18 @@
     <title>Minecraft MK Server</title>
     <link rel="stylesheet" href="style.css">
     <!-- Standard favicon -->
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png"> <!-- Changed to png for better compatibility -->
     <!-- Apple Touch Icon for iOS devices -->
     <link rel="apple-touch-icon" href="favicon.png">
 </head>
 <body>
     <header>
         <h1>Minecraft MK Server</h1>
-        
-         <!-- Hamburger Icon -->
-        <div class="hamburger" id="hamburger-menu">
+
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation"> <!-- Added aria-label for accessibility -->
             &#9776; <!-- Unicode for hamburger icon -->
-        </div>
+        </button>
 
         <nav class="nav-menu">
             <ul>
@@ -28,25 +31,26 @@
                 <li><a href="#mods">Necessary Mods</a></li>
             </ul>
         </nav>
-        
+
         <div class="header-buttons">
-            <a class="mkvalley-btn" href="https://t.me/+sckUCgZvsgg2ZDc0">Join MKValley</a>
-            <a class="request-btn" href="https://t.me/disphoruik">Make a request to join MKChat</a>
+            <a class="mkvalley-btn" href="https://t.me/+sckUCgZvsgg2ZDc0" target="_blank" rel="noopener noreferrer">Join MKValley</a> <!-- Added target and rel for security -->
+            <a class="request-btn" href="https://t.me/disphoruik" target="_blank" rel="noopener noreferrer">Make a request to join MKChat</a> <!-- Added target and rel for security -->
         </div>
     </header>
 
-    <!-- The rest of your sections remain unchanged -->
+    <!-- Server Information Section -->
     <section id="info">
         <h2>Server Information</h2>
         <div class="info-box">
             <p><strong>Minecraft version:</strong> 1.21</p>
-            <p><strong>Survival IP:</strong> my.pooziqo.fun</p>
-            <p><strong>Creative IP:</strong> creative.pooziqo.fun</p>
-            <p><strong>TeamSpeak:</strong> pooziqo.fun <br><strong> Password: </strong>L0IBJZB4 <br> TeamSpeak 3 is recommended</p>
-            <p><strong>XMPP:</strong> pooziqo.fun (Registration allowed)</p>
+            <p><strong>Survival IP:</strong> <a href="http://my.pooziqo.fun" target="_blank" rel="noopener noreferrer">my.pooziqo.fun</a></p> <!-- Added link -->
+            <p><strong>Creative IP:</strong> <a href="http://creative.pooziqo.fun" target="_blank" rel="noopener noreferrer">creative.pooziqo.fun</a></p> <!-- Added link -->
+            <p><strong>TeamSpeak:</strong> <a href="http://pooziqo.fun" target="_blank" rel="noopener noreferrer">pooziqo.fun</a> <br><strong>Password:</strong> L0IBJZB4 <br> TeamSpeak 3 is recommended</p>
+            <p><strong>XMPP:</strong> <a href="http://pooziqo.fun" target="_blank" rel="noopener noreferrer">pooziqo.fun</a> (Registration allowed)</p> <!-- Added link -->
         </div>
     </section>
 
+    <!-- Rules Section -->
     <section id="rules">
         <h2>Rules</h2>
         <div class="rules-box">
@@ -59,25 +63,29 @@
         </div>
     </section>
 
+    <!-- CIT Section -->
     <section id="cit">
         <h2>CIT (Custom Item Textures)</h2>
         <p><strong>What is a CIT?</strong> CIT allows custom texture packs to change item appearances by renaming them.</p>
-        <p><strong>How to contribute:</strong> Make a pull request to our GitHub repository: <a href="https://github.com/Spbog/MKcit">MKcit GitHub</a>.</p>
+        <p><strong>How to contribute:</strong> Make a pull request to our GitHub repository: <a href="https://github.com/Spbog/MKcit" target="_blank" rel="noopener noreferrer">MKcit GitHub</a>.</p>
 
         <h3>CIT Model List</h3>
         <div class="cit-box">
             <table>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Tag in-game</th>
-                    <th>Item</th>
-                </tr>
+                <thead> <!-- Added thead for semantic structure -->
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Tag in-game</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Added tbody for better structure -->
                 <tr>
                     <td>PlayStation 2</td>
                     <td>den4iklovelinux</td>
                     <td>ps2</td>
-                    <td>Sea Pickels</td>
+                    <td>Sea Pickles</td>
                 </tr>
                 <tr>
                     <td>Cup</td>
@@ -145,35 +153,31 @@
                     <td>ванплас/oneplus</td>
                     <td>Any Shovel</td>
                 </tr>
-                </tr>
                 <tr>
                     <td>Pixel 6 Pro</td>
-                    <td><a href=https://doxbin.org/upload/mishanyadoxx>mih0illo</a></td>
+                    <td><a href="https://doxbin.org/upload/mishanyadoxx" target="_blank" rel="noopener noreferrer">mih0illo</a></td> <!-- Added link -->
                     <td>Pixel 6 Pro</td>
                     <td>Any Shovel or Flint and Steel</td>
                 </tr>
                 <tr>
                     <td>Pixel 7 Pro</td>
-                    <td><a href=https://doxbin.org/upload/mishanyadoxx>mih0illo</a></td>
+                    <td><a href="https://doxbin.org/upload/mishanyadoxx" target="_blank" rel="noopener noreferrer">mih0illo</a></td> <!-- Added link -->
                     <td>Pixel 7 Pro</td>
                     <td>Any Shovel or Flint and Steel or Totem of Undying</td>
                 </tr>
+                </tbody> <!-- Closing tbody -->
             </table>
         </div>
     </section>
 
+    <!-- Mods Section -->
     <section id="mods">
         <h2>Necessary Mods</h2>
         <div class="mods-box">
             <ul>
-                <li><a href="https://modrinth.com/mod/cit-resewn/version/1.2.1+1.21">CIT Reseewn</a></li>
-                <li><a href="https://modrinth.com/plugin/noemotecraft/version/s425DF9Z">NoEmoteCraft</a></li>
-                <li><a href="https://modrinth.com/plugin/custom-player-models/version/1.21v0.6.19a-fabric">Custom Player Models</a></li>
-                <li><a href="https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21.1-2.5.22">Simple Voice Chat</a></li>
+                <li><a href="https://modrinth.com/mod/cit-resewn/version/1.2.1+1.21" target="_blank" rel="noopener noreferrer">CIT Reseewn</a></li>
+                <li><a href="https://modrinth.com/plugin/noemotecraft/version/s425DF9Z" target="_blank" rel="noopener noreferrer">NoEmoteCraft</a></li>
+                <li><a href="https://modrinth.com/plugin/custom-player-models/version/1.21v0.6.19a-fabric" target="_blank" rel="noopener noreferrer">Custom Player Models</a></li>
+                <li><a href="https://modrinth.com/plugin/simple-voice-chat/version/fabric-1.21.1-2.5.22" target="_blank" rel="noopener noreferrer">Simple Voice Chat</a></li>
             </ul>
         </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
