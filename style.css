@@ -5,7 +5,7 @@ body {
     background-image: radial-gradient(circle at 1px 1px, #555 1px, transparent 1%), 
                       radial-gradient(circle at 3px 3px, #555 1px, transparent 1%);
     background-size: 20px 20px;
-    background-attachment: fixed; /* Background stays in place when scrolling */
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     color: #ddd;
@@ -14,87 +14,75 @@ body {
 
 /* Header Styles */
 header {
-    background: rgba(30, 30, 30, 0.7); /* Semi-transparent background */
-    padding: 15px 20px; /* Padding for spacing */
+    background: rgba(30, 30, 30, 0.7);
+    padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid #444;
-    backdrop-filter: blur(10px); /* Add blur effect */
-    transition: transform 0.4s ease-in-out; /* Smooth animation */
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s ease-in-out;
     display: flex;
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Vertically center items */
-}
-
-
-
-/* Adjust the height if your header has different content */
-
-.header-content {
-    position: relative; /* Ensure the content is positioned correctly */
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Header Title */
 header h1 {
     margin: 0;
-    font-size: 1.8em; /* Adjust font size */
+    font-size: 1.8em;
     color: #ffffff;
 }
 
 /* Link Colors */
 a {
-    color: #007bff; /* Soft blue */
+    color: #007bff;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3;
 }
 
 /* Header Buttons Container */
 .header-buttons {
     display: flex;
-    gap: 15px; /* Space between buttons */
+    gap: 15px;
 }
 
 /* Base Styles for Buttons */
 .mkvalley-btn, .request-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff6f61; /* Base background */
+    background-color: #ff6f61;
     color: white;
     text-align: center;
     text-decoration: none;
-    border-radius: 25px; /* Smooth rounded corners */
+    border-radius: 25px;
     font-size: 1rem;
-    white-space: nowrap; /* Prevent text from wrapping */
-    font-weight: 500; /* Slightly bold */
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+    white-space: nowrap;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 /* Hover Effect for Buttons */
 .mkvalley-btn:hover, .request-btn:hover {
-    background-color: #ff574d; /* Slightly darker background on hover */
-    color: #ffffff; /* Keep the text color white */
-    transform: translateY(-3px); /* Smooth and subtle lift */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow for better text readability */
+    background-color: #ff574d;
+    transform: translateY(-3px);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 /* Active Button Effect */
 .mkvalley-btn:active, .request-btn:active {
-    background-color: #e64e3c; /* Darker background when pressed */
-    transform: translateY(0); /* Reset lift */
-    color: #ffffff; /* Ensure the text color stays white */
-    text-shadow: none; /* No shadow when pressed */
+    background-color: #e64e3c;
+    transform: translateY(0);
+    text-shadow: none;
 }
-
-
 
 /* Navigation Container */
 nav {
-    flex-grow: 1; /* Allow nav to grow and take available space */
+    flex-grow: 1;
 }
 
 /* Navigation List */
@@ -103,17 +91,16 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px; /* Space between menu items */
-    justify-content: center; /* Ensure the nav is centered */
+    gap: 15px;
+    justify-content: center;
 }
-/* Navigation Links */
+
 nav ul li {
-    margin: 0; /* Remove any extra margin on list items */
-    padding: 0; /* Remove any extra padding on list items */
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation Links */
-
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -129,85 +116,37 @@ nav ul li a:hover {
 
 /* Main Container for Content */
 .container {
-    max-width: 1200px; /* Maximum width of the container */
-    width: 80%; /* The container will take 80% of the available width */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding inside the container */
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-    border-radius: 15px; /* Smooth rounding for modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow for depth */
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* General content styling inside container */
 .container h2, .container p {
     color: #ffffff;
     margin-bottom: 15px;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        width: 90%; /* Slightly wider on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 95%; /* Even wider on very small screens */
-    }
-}
-
-/* Adjust any inner sections */
-.section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: rgba(40, 40, 40, 0.9); /* Dark background for sections */
-    border-radius: 10px; /* Slight rounding of section corners */
-}
-
 /* Main Section Styling */
 section {
-    max-width: 1200px; /* Set the maximum width for sections */
-    width: 80%; /* The section will take 80% of the available width */
-    margin: 20px auto; /* Center the sections horizontally and add vertical spacing */
-    padding: 20px; /* Add padding inside the section */
-    background-color: transparent; /* Transparent background */
-    border-radius: 15px; /* Smooth rounding for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0); /* Completely remove the shadow */
+    max-width: 1200px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
 }
 
-/* General content styling inside sections */
 section h2, section p {
-    color: #ffffff; /* Keep the text color white */
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    section {
-        width: 90%; /* Wider sections on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    section {
-        width: 95%; /* Make the sections wider on very small screens */
-    }
-}
-
-
-section {
-    padding: 50px 20px;
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
+/* Info, Rules, CIT, Mods Boxes */
 .info-box, .rules-box, .cit-box, .mods-box {
     background: rgba(50, 50, 50, 0.8);
     padding: 20px;
@@ -237,6 +176,7 @@ table td {
     background-color: rgba(30, 30, 30, 0.7);
 }
 
+/* Footer */
 footer {
     background: rgba(30, 30, 30, 0.9);
     padding: 20px;
@@ -249,7 +189,83 @@ footer p {
     margin: 0;
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
+/* Responsive Styles */
+
+/* Header Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mkvalley-btn, .request-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    section {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
 }
