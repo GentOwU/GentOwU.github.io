@@ -21,6 +21,7 @@ header {
     z-index: 1000;
     border-bottom: 2px solid #444;
     backdrop-filter: blur(10px); /* Add blur effect */
+    transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
 }
 
 .header-content {
