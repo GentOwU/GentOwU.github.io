@@ -63,7 +63,7 @@ a:hover {
 .mkvalley-btn, .request-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff6f61; /* Gradient background */
+    background-color: #ff6f61; /* Base background */
     color: white;
     text-align: center;
     text-decoration: none;
@@ -71,23 +71,25 @@ a:hover {
     font-size: 1rem;
     white-space: nowrap; /* Prevent text from wrapping */
     font-weight: 500; /* Slightly bold */
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
 }
 
 /* Hover Effect for Buttons */
 .mkvalley-btn:hover, .request-btn:hover {
-    background-color: #ff574d; /* Darker background on hover */
+    background-color: #ff574d; /* Slightly darker background on hover */
     color: #ffffff; /* Keep the text color white */
-    transform: translateY(-2px); /* Slight lift effect */
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow to make it pop */
+    transform: translateY(-3px); /* Smooth and subtle lift */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow for better text readability */
 }
 
 /* Active Button Effect */
 .mkvalley-btn:active, .request-btn:active {
     background-color: #e64e3c; /* Darker background when pressed */
-    transform: translateY(0); /* Reset lift effect */
+    transform: translateY(0); /* Reset lift */
     color: #ffffff; /* Ensure the text color stays white */
+    text-shadow: none; /* No shadow when pressed */
 }
+
 
 
 /* Navigation Container */
