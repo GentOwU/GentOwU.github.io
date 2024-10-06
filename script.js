@@ -39,3 +39,11 @@ const navMenu = document.querySelector('.nav-menu');    // Navigation menu
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active'); // Toggle the active class to show/hide menu
 });
+
+// script.js
+
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active'); // Toggle the 'active' class to show/hide menu
+});
+
