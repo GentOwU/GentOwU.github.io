@@ -42,6 +42,31 @@ header h1 {
     color: #ffffff;
 }
 
+/* Button Container in Header */
+.header-buttons {
+    display: flex; /* Align buttons horizontally */
+    gap: 15px; /* Space between buttons */
+}
+
+/* Request Button */
+.request-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6f61, #ff9966);
+    color: white;
+    padding: 10px 15px; /* Adjust padding to fit the button */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent the button text from wrapping */
+}
+
+.request-btn:hover {
+    background: linear-gradient(45deg, #ff574d, #ff7f4d);
+}
+
+
 /* Navigation Container */
 nav {
     flex-grow: 1; /* Allow nav to grow and take available space */
