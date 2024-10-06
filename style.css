@@ -28,6 +28,7 @@ header {
 }
 
 
+
 /* Adjust the height if your header has different content */
 
 .header-content {
@@ -41,6 +42,11 @@ header h1 {
     color: #ffffff;
 }
 
+/* Navigation Container */
+nav {
+    flex-grow: 1; /* Allow nav to grow and take available space */
+}
+
 /* Navigation List */
 nav ul {
     list-style: none;
@@ -48,14 +54,16 @@ nav ul {
     margin: 0;
     display: flex;
     gap: 15px; /* Space between menu items */
+    justify-content: center; /* Ensure the nav is centered */
 }
-
+/* Navigation Links */
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0; /* Remove any extra margin on list items */
+    padding: 0; /* Remove any extra padding on list items */
 }
 
 /* Navigation Links */
+
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
